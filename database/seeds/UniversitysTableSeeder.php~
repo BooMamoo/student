@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use App\University;
+  
+class UniversitysTableSeeder extends Seeder {
+    public function run() {
+	
+	University::truncate();
+	
+	University::create( [
+	    'id' => 1 ,
+	    'name' => "A University" ,
+	] );
+       
+      	University::create( [
+	    'id' => 2 ,
+	    'name' => "B University" ,
+	] );
+
+	University::create( [
+	    'id' => 2 ,
+	    'name' => "C University" ,
+	] );
+
+	University::create( [
+	    'id' => 4 ,
+	    'name' => "D University" ,
+	] );
+
+	University::create( [
+	    'id' => 5 ,
+	    'name' => "E University" ,
+	] );
+    }
+}
